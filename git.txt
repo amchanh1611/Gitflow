@@ -1,0 +1,16 @@
+hotfix 
+
+sourc on branch master
+
+publish on merge into branch develop and branch master, tagging on master
+
+ví dụ: khi đã phát hành phiên bản 1.0 của ứng dụng và xảy ra lỗi thì sẽ tạo ra branchs hotfix để fix lỗi cho phiên bản 1.0, trong khi đó công việc phát triển phiên
+bản 2.0 của ứng dụng vẫn được tiếp tục trên branch develop
+khi merge thì sẽ được merge vào branchs master để ứng dụng tiếp tục phát hành, và cũng được merge vào branch develop để phiên bản tiếp theo không bị dính lại lỗi đó nữa
+
+bugfix 
+
+nhánh được tạo ra từ nhánh release, và chỉ tương tác với nhánh release 
+
+khi release sản phẩm và có lỗi phát sinh thì sẽ không quay lại branch feature để sử lỗi, mà sẽ tách ra 1 branch là branchs bugfix để sửa lỗi và sau đó merge lại vào branch
+release
